@@ -216,8 +216,8 @@ textarea:focus, input:focus, select:focus {
     position: relative;
     display: flex;
     justify-content: center;
-    bottom: 0;
-    width: 100%; 
+    margin: 40px 0 0 0;
+    width: auto; 
     text-align: center;
 }
 
