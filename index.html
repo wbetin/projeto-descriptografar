@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Decodificador - Challenge Oracle ONE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/logo.svg" alt="Logotipo da Alura na cor azul">
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__texto">
+            <textarea id="textArea" oninput="ocultaDiv()" rows="4" cols="20" placeholder="Digite seu texto"></textarea> 
+            
+            <p class="conteudo__texto__aviso"><img src="assets/bi_exclamation-circle-fill.svg" alt="Imagem com uma esclamação simbolizando para ter atenção">Apenas letras minúsculas e sem acento.</p>
+
+            <div class="conteudo__botao">
+                <button class="botao-1" onclick="criptografarMensagem(), exibirBotao()">Criptografar</button>
+                <button class="botao-2" onclick="descriptografarMensagem(), exibirBotao()">Descriptografar</button>
+            </div>
+        </section>   
+
+        <section class="resultado">
+            <div id="informacao">                
+                <img class="resultado__imagem" src="assets/homem.svg" alt="Imagem de um homem com uma lupa analisando um diamante">
+                <h1 class="resultado__titulo">Nenhuma mensagem encontrada</h1>
+                <p class="resultado__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>                
+            </div>
+            <p id="resultado__criptografado"></p>
+
+            <div id="copiar" class="botao-copiar">
+                <button class="botao-2" onclick="copiarDados()">Copiar</button>
+            </div>
+        </section>    
+    </main>
+
+    <footer>
+        <p class="footer">Criado por Willian Faria 2024</p>
+    </footer>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
+
